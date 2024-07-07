@@ -21,8 +21,8 @@ mongoose.connect(process.env.MONGO).then(()=>{
 })
 .catch((err)=>
 console.log(err));
-app.listen(3000, ()=>{
-    console.log("Server is listnening on por̉̉t 3000!");
+app.listen(process.env.PORT, ()=>{
+    console.log(`Server is listnening on por̉̉t ${process.env.PORT}!`);
 }
 );
 
